@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>車庫証明 書類作成デモ</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>車庫証明 申請書 自動作成ツール</h1>
+  
+  <label>申請者氏名：<input type="text" id="name"></label><br>
+  <label>住所（使用の本拠）：<input type="text" id="address"></label><br>
+  <label>保管場所住所：<input type="text" id="parking"></label><br>
+  <label>車名：<input type="text" id="carname"></label><br>
+  <label>車台番号：<input type="text" id="chassis"></label><br>
+  
+  <button onclick="generatePDF()">PDFを作成する</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
